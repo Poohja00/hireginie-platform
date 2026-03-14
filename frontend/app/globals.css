@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ====================================================== */
+/* HIREGINIE BRAND THEME */
+/* ====================================================== */
+
+:root {
+
+  /* Brand colors */
+
+  --hireginie-red: #E11D2E;
+  --hireginie-red-dark: #BE1622;
+
+  --hireginie-dark: #0F172A;
+
+  --background-main: #F4F6F8;
+  --card-bg: #FFFFFF;
+
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+
+  --border-color: #E5E7EB;
+}
+
+
+/* ====================================================== */
+/* GLOBAL PAGE STYLE */
+/* ====================================================== */
+
+body {
+
+  background: var(--background-main);
+  color: var(--text-primary);
+
+  font-family:
+  system-ui,
+  -apple-system,
+  Segoe UI,
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif;
+
+  margin: 0;
+
+}
+
+
+/* ====================================================== */
+/* PAGE CONTAINER */
+/* ====================================================== */
+
+.page {
+
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+
+}
+
+
+/* ====================================================== */
+/* CARDS */
+/* ====================================================== */
+
+.card {
+
+  background: var(--card-bg);
+
+  border-radius: 12px;
+
+  border: 1px solid var(--border-color);
+
+  padding: 24px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+  transition: 0.2s;
+
+}
+
+.card:hover {
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+
+}
+
+
+/* ====================================================== */
+/* BUTTONS */
+/* ====================================================== */
+
+.button {
+
+  background: var(--hireginie-red);
+  color: white;
+
+  border-radius: 8px;
+
+  padding: 10px 18px;
+
+  font-weight: 600;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+.button:hover {
+
+  background: var(--hireginie-red-dark);
+
+}
+
+
+/* ====================================================== */
+/* INPUTS */
+/* ====================================================== */
+
+input,
+textarea,
+select {
+
+  width: 100%;
+
+  background: white;
+
+  color: var(--text-primary);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 8px;
+
+  padding: 10px;
+
+  font-size: 14px;
+
+}
+
+/* Fix invisible placeholder */
+
+input::placeholder,
+textarea::placeholder {
+
+  color: var(--text-secondary);
+
+}
+
+/* Focus */
+
+input:focus,
+textarea:focus,
+select:focus {
+
+  outline: none;
+
+  border-color: var(--hireginie-red);
+
+}
+
+
+/* ====================================================== */
+/* TABLES */
+/* ====================================================== */
+
+.table {
+
+  width: 100%;
+
+  background: white;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+}
+
+.table th {
+
+  background: #F9FAFB;
+
+  text-align: left;
+
+  padding: 12px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.table td {
+
+  padding: 12px;
+
+  border-top: 1px solid #F1F5F9;
+
+}
+
+.table tr:hover {
+
+  background: #FAFAFA;
+
+}
+
+
+/* ====================================================== */
+/* DASHBOARD METRIC TILES */
+/* ====================================================== */
+
+.tile {
+
+  background: white;
+
+  border-radius: 10px;
+
+  border: 1px solid var(--border-color);
+
+  padding: 18px;
+
+}
+
+.tile-title {
+
+  font-size: 12px;
+
+  color: var(--text-secondary);
+
+}
+
+.tile-number {
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-top: 5px;
+
+}
+
+
+/* ====================================================== */
+/* LINKS */
+/* ====================================================== */
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+/* ====================================================== */
+/* SCROLLBAR */
+/* ====================================================== */
+
+::-webkit-scrollbar {
+
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #D1D5DB;
+
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: #9CA3AF;
+
+}
